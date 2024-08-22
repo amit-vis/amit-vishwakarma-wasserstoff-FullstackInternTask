@@ -1,0 +1,20 @@
+.weather-detailssection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: aliceblue;
+}
+.weather-detailssection .weather-details-container{
+    height: 90vh;
+    width: 90vh;
+    background-color: #0c021d;
+    border-radius: 5%;
+}
+.weather-detailssection .weather-details-container .wheather-sub-container{
+    display: flex;
+    justify-content: space-between;
+}
+.wheather-sub-container div{
+    margin-right: 5%;
+}

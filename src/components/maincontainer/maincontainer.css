@@ -1,0 +1,39 @@
+.main-details-container{
+    width: 55vh;
+    background-color: #24183c;
+    margin-left: 2%;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px 10px #624e89;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+.main-details-container .temp-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8%;
+}
+.main-details-container .temp-container span{
+    font-size: 4rem;
+    font-weight: 700;
+    position: relative;
+
+}
+.temp-container img{
+    width: 35%;
+    height: 35%;
+}
+.temp-container span .degree-sign{
+    position: absolute;
+    top: 0;
+    font-size: 2rem;
+}
+.five-days-forcast{
+    background-color: #24183c;
+    color: aliceblue;
+    padding: 2%;
+    font-weight: 700;
+    box-shadow: 2px 2px 5px 5px #624e89;
+    font-size: 1.2rem;
+    border: 1px solid aliceblue;
+    cursor: pointer;
+}

@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import { WeatherDetails } from './components/weatherdetails';
+import { Forcast } from './components/forcast/Forcast';
+import { WeatherProvider } from './contextAPI/mainWeather';
 
 function App() {
+  const [isVisible, setIsVisible] = useState(false);
+  const handleVisible = ()=>{
+    setIsVisible(!isVisible)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WeatherProvider>
+      <WeatherDetails handleVisible={handleVisible}/>
+      {isVisible && <Forcast/>}
+      </WeatherProvider>
     </div>
   );
 }

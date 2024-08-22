@@ -1,0 +1,19 @@
+.search-container{
+    width: 80%;
+    margin: auto;
+    padding-top: 2%;
+    color: aliceblue;
+}
+.search-container input{
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: antiquewhite;
+    background-color: transparent;
+    border: 1px solid aliceblue;
+    font-size: 20px;
+}

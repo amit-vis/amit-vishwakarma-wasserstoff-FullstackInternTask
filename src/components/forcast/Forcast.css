@@ -1,0 +1,51 @@
+.forcast-section{
+    height: 100vh;
+    color: aliceblue;
+    margin-left: 5%;
+}
+.forcast-section .forcast-container{
+    background-color: #0c021d;
+    width: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5%;
+    padding: 5%;
+
+}
+.show-forcastdetails{
+    width: 25vh;
+    height: 25vh;
+    background-color: #24183c;
+    border-radius: 10%;
+    margin-left: 3%;
+    margin-top: 3%;
+    padding-bottom: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+
+}
+.show-forcastdetails .temp-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.show-forcastdetails .temp-container span{
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+
+}
+.show-forcastdetails .temp-container img{
+    width: 40%;
+    height: 40%;
+}
+.show-forcastdetails .temp-container span .degree-sign{
+    position: absolute;
+    top: 0;
+    font-size: 1.3rem;
+}
+.temp-container2{
+    margin-top: 10%;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
