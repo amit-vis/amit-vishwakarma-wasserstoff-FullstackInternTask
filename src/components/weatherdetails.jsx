@@ -7,6 +7,15 @@ import "./weatherdetails.css";
 
 export const WeatherDetails = ({handleVisible})=>{
     const {city, weatherData} = useWeather();
+    if(!weatherData){
+        return(
+            <>
+            <div className="loading-container">
+                <div className="loading-icon"></div>
+            </div>
+            </>
+        )
+    }
     return(
         <>
             <section className="weather-detailssection">
@@ -14,8 +23,8 @@ export const WeatherDetails = ({handleVisible})=>{
                     <SearchBar/>
                 <h1>{city? city.toUpperCase(): "city Name"}</h1>
                 <div className="wheather-sub-container">
-                    <MainContainer handleVisible={handleVisible}/>
-                    <div>
+                <MainContainer handleVisible={handleVisible}/>
+                    <div className="new-container">
                         <Humadity/>
                         <Direction/>
                     </div>

@@ -1,20 +1,109 @@
-.weather-detailssection{
+.weather-detailssection {
+
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     color: aliceblue;
 }
-.weather-detailssection .weather-details-container{
+
+.weather-detailssection .weather-details-container {
     height: 90vh;
     width: 90vh;
     background-color: #0c021d;
     border-radius: 5%;
+    padding-bottom: 4%;
 }
-.weather-detailssection .weather-details-container .wheather-sub-container{
+
+.weather-detailssection .weather-details-container .wheather-sub-container {
     display: flex;
     justify-content: space-between;
 }
-.wheather-sub-container div{
+
+.wheather-sub-container div {
     margin-right: 5%;
+}
+
+.loading-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.loading-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: conic-gradient(aqua 10deg, rgb(230, 242, 242) 0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: moveCircle 1s ease-in-out infinite;
+}
+.loading-icon::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+}
+
+@keyframes moveCircle{
+    from{
+        background: conic-gradient(aqua 10deg, rgb(230, 242, 242) 0deg);
+    }
+    25%{
+        background: conic-gradient(aqua 90deg, rgb(230, 242, 242) 0deg);
+    }
+    50%{
+        background: conic-gradient(aqua 180deg, rgb(230, 242, 242) 0deg);
+    }
+    75%{
+        background: conic-gradient(aqua 270deg, rgb(230, 242, 242) 0deg);
+    }
+    to{
+        background: conic-gradient(aqua 360deg, rgb(230, 242, 242) 0deg);
+    }
+}
+
+/* responsive */
+
+@media (max-width: 1024px){
+    .weather-detailssection .weather-details-container {
+        width: 100%;
+        border-radius: 10px;
+        height: 120vh;
+        padding-bottom: 4%;
+        padding-top: 2%;
+    }
+}
+@media (max-width: 667px) {
+    .weather-detailssection {
+        margin: 0;
+        width: 100%;
+    }
+
+    .weather-detailssection .weather-details-container {
+        width: 100%;
+        border-radius: 10px;
+        height: 120vh;
+        padding-bottom: 4%;
+        padding-top: 2%;
+    }
+
+    .weather-detailssection .weather-details-container .wheather-sub-container {
+        flex-direction: column;
+
+    }
+
+    .wheather-sub-container .new-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 5%;
+        margin-left: auto;
+    }
 }

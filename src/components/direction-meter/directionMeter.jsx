@@ -5,10 +5,9 @@ export const Direction = () => {
 
     return (
         <>
+        <div>
             <h3>Wind Direction</h3>
-            <div className="direction-container" 
-            >
-
+            <div className="direction-container">
                 <div className="direction-meter">
                     <div class="direction-labels">
                         <span class="north">N</span>
@@ -20,6 +19,7 @@ export const Direction = () => {
                     style={{transform: `rotate(${windDirection}deg)`}}
                     ></div>
                 </div>
+            </div>
             </div>
         </>
     )

@@ -5,6 +5,7 @@ export const Humadity = ()=>{
     
     return(
         <>
+        <div>
         <h1 style={{margin:"auto"}}>Humidity</h1>
         <div className="humadity-container">
 
@@ -13,6 +14,7 @@ export const Humadity = ()=>{
             >
             <span className="progress-value">{weatherData?.humidity}%</span>
             </div>
+        </div>
         </div>
         </>
     )

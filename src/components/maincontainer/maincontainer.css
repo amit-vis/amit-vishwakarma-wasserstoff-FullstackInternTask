@@ -1,4 +1,4 @@
-.main-details-container{
+.main-details-container {
     width: 55vh;
     background-color: #24183c;
     margin-left: 2%;
@@ -7,27 +7,33 @@
     padding-top: 2%;
     padding-bottom: 3%;
 }
-.main-details-container .temp-container{
+
+.main-details-container .temp-container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-top: 8%;
 }
-.main-details-container .temp-container span{
+
+.main-details-container .temp-container span {
     font-size: 4rem;
     font-weight: 700;
     position: relative;
 
 }
-.temp-container img{
+
+.temp-container img {
     width: 35%;
     height: 35%;
 }
-.temp-container span .degree-sign{
+
+.temp-container span .degree-sign {
     position: absolute;
     top: 0;
     font-size: 2rem;
 }
-.five-days-forcast{
+
+.five-days-forcast {
     background-color: #24183c;
     color: aliceblue;
     padding: 2%;
@@ -36,4 +42,31 @@
     font-size: 1.2rem;
     border: 1px solid aliceblue;
     cursor: pointer;
+}
+
+/* responsive */
+@media (max-width: 1024px){
+    .main-details-container .temp-container span {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 667px) {
+    .main-details-container {
+        width: 90%;
+        border-radius: 5px;
+        margin: auto;
+    }
+    .main-details-container .temp-container span {
+        font-size: 1.5rem;
+    }
+    .five-days-forcast {
+        font-size: 1rem;
+        width: 90%;
+    }
+    .temp-container span .degree-sign {
+        top: 0;
+        font-size: 0.9rem;
+        padding: 1%;
+    }
 }

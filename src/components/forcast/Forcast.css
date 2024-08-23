@@ -1,7 +1,7 @@
 .forcast-section{
     height: 100vh;
     color: aliceblue;
-    margin-left: 5%;
+    margin-left: 3%;
 }
 .forcast-section .forcast-container{
     background-color: #0c021d;
@@ -17,16 +17,17 @@
     height: 23vh;
     background-color: #24183c;
     border-radius: 10%;
-    margin-left: 3%;
     margin-top: 3%;
     padding-bottom: 5%;
     padding-left: 1%;
     padding-right: 1%;
+    margin-left: 5%;
 
 }
 .show-forcastdetails .temp-container{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-top: 5%;
 }
 .show-forcastdetails .temp-container span{
@@ -49,3 +50,37 @@
     font-size: 1.3rem;
     font-weight: 600;
 }
+
+/* responsive */
+@media (max-width: 1024px){
+    .show-forcastdetails{
+        width: 26vh;
+        height: 24vh;
+        margin-left: 4%;
+        padding-bottom: 15%;
+    }
+}
+@media (max-width: 778px){
+    .forcast-section{
+        margin-left: 2%;
+    }
+    .show-forcastdetails{
+        margin-left: 3%;
+    
+    }
+}
+@media (max-width: 667px){
+    .forcast-section{
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .forcast-section .forcast-container{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .show-forcastdetails{
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+    }
+  }
