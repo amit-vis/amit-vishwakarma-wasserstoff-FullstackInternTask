@@ -1,5 +1,5 @@
 import axios from "axios";
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const WeatherContext = createContext();
 
@@ -58,6 +58,10 @@ export const WeatherProvider = ({children})=>{
             return false
         }
     }
+
+    useEffect(()=>{
+        handleSearch("new delhi")
+    },[])
 
     return(
         <WeatherContext.Provider value={{city, handleSearch,weatherData, toggleUnit, unit, windDirection, forcastDayData}}>

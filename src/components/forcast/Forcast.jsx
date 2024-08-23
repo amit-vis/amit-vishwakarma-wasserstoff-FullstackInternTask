@@ -6,10 +6,10 @@ export const Forcast = () => {
     return (
         <>
             <section className="forcast-section">
-                <h1 style={{ color: "black" }}>Five Day Forcast</h1>
+                <h1 style={{ color: "black" }}>Five Day Forecast</h1>
                 <div className="forcast-container">
-                    {forcastDayData?.map((data) => (
-                        <div className="show-forcastdetails">
+                    {forcastDayData?.map((data, index) => (
+                        <div className="show-forcastdetails" key={index}>
                             <div className="temp-container">
                                 <span>{unit === 'C' ? data.day.avgtemp_c : data.day.avgtemp_f}<small className="degree-sign">o</small>
                                     <span style={{ left: "15%" }}>{unit}</span></span>

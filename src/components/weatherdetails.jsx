@@ -12,7 +12,7 @@ export const WeatherDetails = ({handleVisible})=>{
             <section className="weather-detailssection">
                 <div className="weather-details-container">
                     <SearchBar/>
-                <h1>{city? city: "city Name"}</h1>
+                <h1>{city? city.toUpperCase(): "city Name"}</h1>
                 <div className="wheather-sub-container">
                     <MainContainer handleVisible={handleVisible}/>
                     <div>

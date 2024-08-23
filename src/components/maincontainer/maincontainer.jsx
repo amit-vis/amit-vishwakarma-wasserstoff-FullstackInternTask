@@ -22,7 +22,7 @@ export const MainContainer = ({handleVisible}) => {
                     <h3>wind direction:- {weatherData?.wind_dir}</h3>
                     <h3>wind speed:- {weatherData?.wind_kph}</h3>
                 </div>
-                <button className="five-days-forcast" onClick={handleVisible}>check 5 days forcast</button>
+                <button className="five-days-forcast" onClick={handleVisible}>check 5 days forecast</button>
             </div>
         </>
     )
