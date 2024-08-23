@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Live Link:-https://amit-vishwakarma-wasserstoff-fullstack-intern-task-h9jrr7sza.vercel.app/
+
+## Installation
+Install My Projects Using npm
+```bash
+    git clone https://github.com/amit-vishwakarma-wasserstoff-FullstackInternTask
+    npm install
+    cd amit-vishwakarma-wasserstoff-FullstackInternTask
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -68,3 +78,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## website view
+![main section](image.png)
+![five day focast section](image-1.png)
